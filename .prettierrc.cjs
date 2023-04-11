@@ -6,7 +6,7 @@ module.exports = {
 	// 缩进字节数
 	tabWidth: 2,
 	// 使用制表符而不是空格缩进行
-	useTabs: true,
+	useTabs: false,
 	// 结尾不用分号(true有，false没有)
 	semi: false,
 	// 使用单引号(true单双引号，false双引号)
@@ -36,4 +36,4 @@ module.exports = {
 	rangeEnd: Infinity,
 	// Vue文件脚本和样式标签缩进
 	vueIndentScriptAndStyle: false
-};
+}
