@@ -14,7 +14,7 @@ GIS-Vue-Admin 一款基于 Vue3.2、TypeScript、Vite4、Pinia、Element-Plus �
 
 - GitHub：https://github.com/Befend/gis-vue-admin
 
-### 项目文档 📚
+### 项目文档
 
 - 项目更新日志：[CHANGELOG.md](./CHANGELOG.md)
 
@@ -34,7 +34,7 @@ GIS-Vue-Admin 一款基于 Vue3.2、TypeScript、Vite4、Pinia、Element-Plus �
 - 使用 Prettier 统一格式化代码，集成 Eslint、Stylelint 代码校验规范
 - 使用 husky、lint-staged、commitlint、commitizen、cz-git 规范提交信息
 
-### 文件资源目录 📚
+### 文件资源目录
 
 ```text
 GIS-Vue-Admin
