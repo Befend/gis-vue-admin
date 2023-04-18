@@ -3,11 +3,11 @@
     <div class="login-box">
       <SwitchDark class="dark" />
       <div class="login-left">
-        <img src="@/assets/images/logo_bak2.svg" alt="login" />
+        <img src="@/assets/images/logo_left.svg" alt="login" />
       </div>
       <div class="login-form">
         <div class="login-logo">
-          <img class="login-icon" src="@/assets/images/logo_bak3.svg" alt="" />
+          <img class="login-icon" src="@/assets/images/sys_logo.svg" alt="" />
           <h2 class="logo-text">GIS-Vue-Admin</h2>
         </div>
         <LoginForm />

@@ -2,10 +2,6 @@ import { createApp } from "vue"
 import App from "./App.vue"
 //style sheet
 import "@/style/index.scss"
-// iconfont css
-import "@/assets/iconfont/iconfont.scss"
-// font css
-import "@/assets/fonts/font.scss"
 // element plus
 import ElementPlus from "element-plus"
 // element icons
@@ -26,6 +22,7 @@ import pinia from "@/store/index"
 import "virtual:svg-icons-register"
 // errorHandler
 import errorHandler from "@/utils/errorHandler"
+import SvgIcon from "@/components/SvgIcon/index.vue"
 
 const app = createApp(App)
 
@@ -36,4 +33,6 @@ Object.keys(Icons).forEach(key => {
   app.component(key, Icons[key as keyof typeof Icons])
 })
 
+// 注册svg组件
+app.component("SvgIcon", SvgIcon)
 app.use(router).use(I18n).use(pinia).use(directives).use(ElementPlus).mount("#app")
