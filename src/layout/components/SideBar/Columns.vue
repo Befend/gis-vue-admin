@@ -50,7 +50,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
   <el-container class="layout">
     <div class="aside-split">
       <div class="logo flx-center">
-        <img src="@/assets/images/logo_bak3.svg" alt="logo" />
+        <img src="@/assets/images/sys_logo.svg" alt="logo" />
       </div>
       <el-scrollbar>
         <div class="split-list">
@@ -62,7 +62,8 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
             @click="changeSubMenu(item)"
           >
             <el-icon>
-              <component :is="item.meta.icon"></component>
+              <!-- <component :is="item.meta.icon"></component> -->
+              <SvgIcon :name="item.meta.icon" />
             </el-icon>
             <span class="title">{{ item.meta.title }}</span>
           </div>
@@ -110,7 +111,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
     border-right: 1px solid #ffffff;
     .logo {
       box-sizing: border-box;
-      height: 55px;
+      height: 59px;
       border-bottom: 1px solid #282a35;
       img {
         width: 32px;
@@ -118,7 +119,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
       }
     }
     .el-scrollbar {
-      height: calc(100% - 55px);
+      height: calc(100% - 59px);
       .split-list {
         flex: 1;
         .split-item {
@@ -164,7 +165,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
     border-right: 1px solid #f0eded;
     transition: all 0.3s ease;
     .el-scrollbar {
-      height: calc(100% - 55px);
+      height: calc(100% - 59px);
       .el-menu {
         overflow-x: hidden;
         border-right: none;
@@ -172,7 +173,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
     }
     .logo {
       box-sizing: border-box;
-      height: 55px;
+      height: 59px;
       border-bottom: 1px solid #f0eded;
       span {
         font-size: 24px;
@@ -190,7 +191,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 55px;
+    height: 59px;
     padding: 0 15px;
     background-color: #ffffff;
     border-bottom: 1px solid #f1f1f1;

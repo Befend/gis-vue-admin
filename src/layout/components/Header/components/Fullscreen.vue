@@ -5,6 +5,10 @@ const { toggle, isFullscreen } = useFullscreen()
 
 <template>
   <div class="fullscreen">
-    <i :class="['iconfont', isFullscreen ? 'icon-suoxiao' : 'icon-fangda']" class="toolBar-icon" @click="toggle"></i>
+    <i
+      :class="['iconfont', isFullscreen ? 'icon-exit-full-screen' : 'icon-full-screen']"
+      class="toolBar-icon"
+      @click="toggle"
+    ></i>
   </div>
 </template>

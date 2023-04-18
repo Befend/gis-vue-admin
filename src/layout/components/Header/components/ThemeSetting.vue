@@ -7,6 +7,6 @@ const openDrawer = () => {
 
 <template>
   <div class="theme-setting">
-    <i :class="'iconfont icon-zhuti'" class="toolBar-icon" @click="openDrawer"></i>
+    <i class="toolBar-icon iconfont icon-setting" @click="openDrawer"></i>
   </div>
 </template>

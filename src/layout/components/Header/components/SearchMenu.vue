@@ -52,7 +52,7 @@ const handleClickMenu = (menuItem: Menu.MenuOptions) => {
 
 <template>
   <div class="layout-search-dialog">
-    <i @click="handleOpen" :class="'iconfont icon-sousuo'" class="toolBar-icon"></i>
+    <i @click="handleOpen" :class="'iconfont icon-search'" class="toolBar-icon"></i>
     <el-dialog v-model="isShowSearch" destroy-on-close :modal="false" :show-close="false" fullscreen @click="closeSearch">
       <el-autocomplete
         v-model="searchMenu"

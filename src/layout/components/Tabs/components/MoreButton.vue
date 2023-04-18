@@ -80,6 +80,6 @@ const closeAllTab = () => {
   </el-dropdown>
 </template>
 
-<style scoped lang="scss">
+<!-- <style scoped lang="scss">
 @import "../index.scss";
-</style>
+</style> -->

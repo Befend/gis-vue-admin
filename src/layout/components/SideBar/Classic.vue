@@ -22,7 +22,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
     <el-header>
       <div class="header-lf">
         <div class="logo flx-center">
-          <img src="@/assets/images/logo_bak3.svg" alt="logo" />
+          <img src="@/assets/images/sys_logo.svg" alt="logo" />
           <span>GIS Vue Admin</span>
         </div>
         <ToolBarLeft />
@@ -63,7 +63,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 55px;
+    height: 59px;
     padding: 0 15px 0 0;
     background-color: #191a20;
     border-bottom: 1px solid #f1f1f1;
@@ -100,6 +100,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
       .el-breadcrumb__item:last-child .el-breadcrumb__inner,
       .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
         color: #cfd3dc;
+        fill: #cfd3dc;
       }
     }
     :deep(.tool-bar-ri) {

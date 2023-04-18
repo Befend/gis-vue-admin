@@ -23,7 +23,7 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
   <el-container class="layout">
     <el-header>
       <div class="logo flx-center">
-        <img src="@/assets/images/logo_bak3.svg" alt="logo" />
+        <img src="@/assets/images/sys_logo.svg" alt="logo" />
         <span>GIS Vue Admin</span>
       </div>
       <el-menu
@@ -40,7 +40,8 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
           <el-sub-menu v-if="subItem.children?.length" :index="subItem.path" :key="subItem.path + 'el-sub-menu'">
             <template #title>
               <el-icon>
-                <component :is="subItem.meta.icon"></component>
+                <!-- <component :is="subItem.meta.icon"></component> -->
+                <SvgIcon :name="subItem.meta.icon" />
               </el-icon>
               <span>{{ subItem.meta.title }}</span>
             </template>
@@ -48,7 +49,8 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
           </el-sub-menu>
           <el-menu-item v-else :index="subItem.path" :key="subItem.path + 'el-menu-item'" @click="handleClickMenu(subItem)">
             <el-icon>
-              <component :is="subItem.meta.icon"></component>
+              <!-- <component :is="subItem.meta.icon"></component> -->
+              <SvgIcon :name="subItem.meta.icon" />
             </el-icon>
             <template #title>
               <span>{{ subItem.meta.title }}</span>
@@ -71,7 +73,7 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 55px;
+    height: 59px;
     padding: 0 15px 0 0;
     background-color: #191a20;
     border-bottom: 1px solid #f1f1f1;

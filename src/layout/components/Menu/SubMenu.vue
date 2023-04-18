@@ -15,7 +15,8 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
     <el-sub-menu v-if="subItem.children && subItem.children.length > 0" :index="subItem.path">
       <template #title>
         <el-icon>
-          <component :is="subItem.meta.icon"></component>
+          <!-- <component :is="subItem.meta.icon"></component> -->
+          <SvgIcon :name="subItem.meta.icon" />
         </el-icon>
         <span>{{ subItem.meta.title }}</span>
       </template>
@@ -23,7 +24,8 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
     </el-sub-menu>
     <el-menu-item v-else :index="subItem.path" @click="handleClickMenu(subItem)">
       <el-icon>
-        <component :is="subItem.meta.icon"></component>
+        <!-- <component :is="subItem.meta.icon"></component> -->
+        <SvgIcon :name="subItem.meta.icon" />
       </el-icon>
       <template #title>
         <span>{{ subItem.meta.title }}</span>

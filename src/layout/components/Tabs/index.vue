@@ -96,9 +96,10 @@ const tabRemove = (fullPath: string) => {
       <el-tabs v-model="tabsMenuValue" type="card" @tab-click="tabClick" @tab-remove="tabRemove">
         <el-tab-pane v-for="item in tabsMenuList" :key="item.path" :label="item.title" :name="item.path" :closable="item.close">
           <template #label>
-            <el-icon class="tabs-icon" v-show="item.icon && themeConfig.tabsIcon">
+            <!-- <el-icon class="tabs-icon" v-show="item.icon && themeConfig.tabsIcon">
               <component :is="item.icon"></component>
-            </el-icon>
+            </el-icon> -->
+            <SvgIcon v-show="item.icon && themeConfig.tabsIcon" class="tabs-icon" :name="item.icon"></SvgIcon>
             {{ item.title }}
           </template>
         </el-tab-pane>
@@ -109,5 +110,46 @@ const tabRemove = (fullPath: string) => {
 </template>
 
 <style scoped lang="scss">
-@import "./index.scss";
+.tabs-box {
+  background-color: #ffffff;
+  :deep(.tabs-menu) {
+    position: relative;
+    width: 100%;
+    .el-dropdown {
+      position: absolute;
+      top: 8px;
+      right: 13px;
+    }
+    .tabs-icon {
+      margin-right: 4px;
+      font-size: 14px;
+    }
+    .el-tabs__nav-wrap {
+      position: absolute;
+      width: calc(100% - 110px);
+    }
+    .el-tabs--card > .el-tabs__header {
+      box-sizing: border-box;
+      height: 40px;
+      padding: 0 10px;
+      margin: 0;
+    }
+    .el-tabs--card > .el-tabs__header .el-tabs__nav {
+      border: none;
+    }
+    .el-tabs--card > .el-tabs__header .el-tabs__item {
+      color: #cccccc;
+      border: none;
+      fill: #cccccc;
+    }
+    .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+      color: var(--el-color-primary);
+      border-bottom: 2px solid var(--el-color-primary);
+      fill: var(--el-color-primary);
+    }
+    .el-tabs__item .is-icon-close svg {
+      margin-top: 0.5px;
+    }
+  }
+}
 </style>

@@ -22,7 +22,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
     <el-aside>
       <div class="menu" :style="{ width: isCollapse ? '65px' : '210px' }">
         <div class="logo flx-center">
-          <img src="@/assets/images/logo_bak3.svg" alt="logo" />
+          <img src="@/assets/images/sys_logo.svg" alt="logo" />
           <span v-show="!isCollapse">GIS Vue Admin</span>
         </div>
         <el-scrollbar>
@@ -66,7 +66,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
       height: 100%;
       transition: all 0.3s ease;
       .el-scrollbar {
-        height: calc(100% - 55px);
+        height: calc(100% - 59px);
         .el-menu {
           overflow-x: hidden;
           border-right: none;
@@ -74,7 +74,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
       }
       .logo {
         box-sizing: border-box;
-        height: 55px;
+        height: 59px;
         border-bottom: 1px solid #282a35;
         span {
           font-size: 21.5px;
@@ -95,7 +95,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse)
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 55px;
+    height: 59px;
     padding: 0 15px;
     background-color: #ffffff;
     border-bottom: 1px solid #f1f1f1;
