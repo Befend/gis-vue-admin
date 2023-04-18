@@ -1,0 +1,14 @@
+// reset style sheet
+@import "@/style/reset.scss";
+
+// CSS common style sheet
+@import "@/style/common.scss";
+
+// custom element dark(自定义暗黑模式)
+@import "@/style/theme/element-dark.scss";
+
+// custom element css
+@import "@/style/element.scss";
+
+// layout css
+@import "@/style/layout.scss";

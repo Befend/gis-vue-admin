@@ -1,0 +1,107 @@
+.classic {
+  .classic-content {
+    height: calc(100% - 59px); // 减去头部高度
+    .classic-main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .el-menu,
+  .el-menu--popup {
+    .el-menu-item {
+      &.is-active {
+        background: var(--el-color-primary-light-9);
+        &::before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 4px;
+          content: "";
+          background: var(--el-color-primary);
+        }
+      }
+    }
+  }
+
+  // guide
+  #driver-highlighted-element-stage {
+    background-color: #606266 !important;
+  }
+}
+.columns {
+  .el-menu,
+  .el-menu--popup {
+    .el-menu-item {
+      &.is-active {
+        background: var(--el-color-primary-light-9);
+        &::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 4px;
+          content: "";
+          background: var(--el-color-primary);
+        }
+      }
+    }
+  }
+}
+.horizontal {
+  // 横向菜单布局
+  .el-menu--horizontal {
+    .el-menu-item,
+    .el-sub-menu {
+      height: 54px !important;
+      .el-sub-menu__title {
+        height: 100%;
+      }
+    }
+    .el-sub-menu__hide-arrow {
+      width: 54px !important;
+    }
+  }
+  .el-menu,
+  .el-menu--popup {
+    .el-menu-item {
+      &.is-active {
+        color: #ffffff;
+        background: #060708;
+        &::before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 4px;
+          content: "";
+          background: var(--el-color-primary);
+        }
+      }
+    }
+  }
+
+  // guide
+  #driver-highlighted-element-stage {
+    background-color: #606266 !important;
+  }
+}
+.vertical {
+  .el-menu,
+  .el-menu--popup {
+    .el-menu-item {
+      &.is-active {
+        background: #060708;
+        &::before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 4px;
+          content: "";
+          background: var(--el-color-primary);
+        }
+      }
+    }
+  }
+}
