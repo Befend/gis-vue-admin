@@ -1,3 +1,9 @@
+<script setup lang="ts" name="403">
+import { useRouter } from "vue-router"
+import { HOME_URL } from "@/config/config"
+const router = useRouter()
+</script>
+
 <template>
   <div class="not-container">
     <img src="@/assets/images/403.svg" class="not-img" alt="403" />
@@ -8,12 +14,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts" name="403">
-import { useRouter } from "vue-router"
-import { HOME_URL } from "@/config/config"
-const router = useRouter()
-</script>
 
 <style scoped lang="scss">
 @import "./index.scss";
