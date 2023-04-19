@@ -34,6 +34,6 @@
     },
     "types": ["unplugin-vue-define-options/macros-global" /* ... */]
   },
-  "include": ["mock/*.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"],
+  "include": ["mock/*.ts", "src/**/*.ts", "src/**/*.d.ts", "types/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv, ConfigEnv, UserConfig } from "vite"
+import { defineConfig, loadEnv, ConfigEnv, UserConfig, type PluginOption } from "vite"
 import { createHtmlPlugin } from "vite-plugin-html"
 import vue from "@vitejs/plugin-vue"
 import { resolve } from "path"
@@ -87,7 +87,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
       // * name 可以写在 script 标签上
       vueSetupExtend(),
       // * 是否生成包预览(分析依赖包大小,方便做优化处理)
-      viteEnv.VITE_REPORT && visualizer(),
+      visualizer() as PluginOption,
       // * gzip compress
       viteEnv.VITE_BUILD_GZIP &&
         viteCompression({
