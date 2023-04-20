@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { defineConfig, loadEnv, ConfigEnv, UserConfig, type PluginOption } from "vite"
-=======
-import { defineConfig, loadEnv, ConfigEnv, UserConfig, PluginOption } from "vite"
->>>>>>> 8850b70 (chore(*): fix build failure bug.)
 import { createHtmlPlugin } from "vite-plugin-html"
 import vue from "@vitejs/plugin-vue"
 import { resolve } from "path"
