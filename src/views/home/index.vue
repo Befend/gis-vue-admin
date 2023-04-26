@@ -21,6 +21,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-image: url("@/assets/images/login_bg01.svg");
+  background-size: 100% 100%;
+  background-size: cover;
   .home-left,
   .home-right {
     display: flex;
