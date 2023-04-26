@@ -10,7 +10,8 @@ const homeRouter = {
   component: "/home/index",
   meta: {
     icon: "homepage",
-    title: "首页",
+    name: "首页",
+    title: "home.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -28,7 +29,7 @@ const homeRouter = {
 //   component: "/dataScreen/index",
 //   meta: {
 //     icon: "big-data-root",
-//     title: "数据大屏",
+//     name: "数据大屏",
 //     isLink: "",
 //     isHide: false,
 //     isFull: true,
@@ -46,7 +47,8 @@ const dashboardRouter = {
   redirect: "/dashboard/dataVisualize",
   meta: {
     icon: "dashboard",
-    title: "仪表盘",
+    name: "仪表盘",
+    title: "dashboard.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -60,7 +62,8 @@ const dashboardRouter = {
       component: "/dashboard/dataVisualize/index",
       meta: {
         icon: "data-visualization",
-        title: "数据可视化",
+        name: "数据可视化",
+        title: "dashboard.dataVisualize",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -74,7 +77,8 @@ const dashboardRouter = {
       component: "/dashboard/embedded/index",
       meta: {
         icon: "inline-page",
-        title: "内嵌页面",
+        name: "内嵌页面",
+        title: "dashboard.embedded",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -94,7 +98,7 @@ const dashboardRouter = {
 //   redirect: "/proTable/useProTable",
 //   meta: {
 //     icon: "table-root",
-//     title: "超级表格",
+//     name: "超级表格",
 //     isLink: "",
 //     isHide: false,
 //     isFull: false,
@@ -108,7 +112,7 @@ const dashboardRouter = {
 //       component: "/proTable/useProTable/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "使用 ProTable",
+//         name: "使用 ProTable",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -122,7 +126,7 @@ const dashboardRouter = {
 //           component: "/proTable/useProTable/detail",
 //           meta: {
 //             icon: "Menu",
-//             title: "ProTable 详情",
+//             name: "ProTable 详情",
 //             isLink: "",
 //             isHide: true,
 //             isFull: false,
@@ -139,7 +143,7 @@ const dashboardRouter = {
 //       component: "/proTable/useTreeFilter/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "使用 TreeFilter",
+//         name: "使用 TreeFilter",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -153,7 +157,7 @@ const dashboardRouter = {
 //       component: "/proTable/useTreeFilter/detail",
 //       meta: {
 //         icon: "Menu",
-//         title: "TreeFilter 详情",
+//         name: "TreeFilter 详情",
 //         activeMenu: "/proTable/useTreeFilter",
 //         isLink: "",
 //         isHide: true,
@@ -168,7 +172,7 @@ const dashboardRouter = {
 //       component: "/proTable/useSelectFilter/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "使用 SelectFilter",
+//         name: "使用 SelectFilter",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -182,7 +186,7 @@ const dashboardRouter = {
 //       component: "/proTable/treeProTable/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "树形 ProTable",
+//         name: "树形 ProTable",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -196,7 +200,7 @@ const dashboardRouter = {
 //       component: "/proTable/complexProTable/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "复杂 ProTable",
+//         name: "复杂 ProTable",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -210,7 +214,7 @@ const dashboardRouter = {
 //       component: "/proTable/document/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "ProTable 文档",
+//         name: "ProTable 文档",
 //         isLink: "https://juejin.cn/post/7166068828202336263/#heading-14",
 //         isHide: false,
 //         isFull: false,
@@ -230,7 +234,8 @@ const permissionRouter = {
   redirect: "/auth/menu",
   meta: {
     icon: "root-manage",
-    title: "权限管理",
+    name: "权限管理",
+    title: "auth.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -244,7 +249,8 @@ const permissionRouter = {
       component: "/auth/menu/index",
       meta: {
         icon: "menu-root",
-        title: "菜单权限",
+        name: "菜单权限",
+        title: "auth.menu",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -258,7 +264,8 @@ const permissionRouter = {
       component: "/auth/button/index",
       meta: {
         icon: "button-manage",
-        title: "按钮权限",
+        name: "按钮权限",
+        title: "auth.button",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -278,7 +285,8 @@ const componentRouter = {
   redirect: "/assembly/guide",
   meta: {
     icon: "components",
-    title: "常用组件",
+    name: "组件",
+    title: "assembly.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -292,7 +300,8 @@ const componentRouter = {
       component: "/assembly/guide/index",
       meta: {
         icon: "guide-component",
-        title: "引导页",
+        title: "assembly.guide",
+        name: "引导页",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -306,7 +315,8 @@ const componentRouter = {
       component: "/assembly/selectIcon/index",
       meta: {
         icon: "icon-selector",
-        title: "图标选择器",
+        name: "图标选择器",
+        title: "assembly.icon",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -320,7 +330,8 @@ const componentRouter = {
       component: "/assembly/selectFilter/index",
       meta: {
         icon: "class-component",
-        title: "分类筛选器",
+        name: "分类筛选器",
+        title: "assembly.class",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -334,7 +345,8 @@ const componentRouter = {
       component: "/assembly/treeFilter/index",
       meta: {
         icon: "tree-component",
-        title: "树形筛选器",
+        name: "树形筛选器",
+        title: "assembly.tree",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -348,7 +360,8 @@ const componentRouter = {
       component: "/assembly/svgIcon/index",
       meta: {
         icon: "svg-icon",
-        title: "SVG 图标",
+        name: "SVG 图标",
+        title: "assembly.svgIcon",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -362,7 +375,8 @@ const componentRouter = {
       component: "/assembly/uploadFile/index",
       meta: {
         icon: "upload",
-        title: "文件上传",
+        name: "文件上传",
+        title: "assembly.upload",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -376,7 +390,8 @@ const componentRouter = {
       component: "/assembly/batchImport/index",
       meta: {
         icon: "batch-add",
-        title: "批量添加数据",
+        name: "批量添加数据",
+        title: "assembly.batch",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -390,7 +405,8 @@ const componentRouter = {
       component: "/assembly/wangEditor/index",
       meta: {
         icon: "rich-text",
-        title: "富文本编辑器",
+        name: "富文本编辑器",
+        title: "assembly.richText",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -404,7 +420,8 @@ const componentRouter = {
       component: "/assembly/draggable/index",
       meta: {
         icon: "drag-component",
-        title: "拖拽组件",
+        name: "拖拽组件",
+        title: "assembly.drag",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -424,7 +441,7 @@ const componentRouter = {
 //   redirect: "/form/proForm",
 //   meta: {
 //     icon: "Tickets",
-//     title: "表单 Form",
+//     name: "表单 Form",
 //     isLink: "",
 //     isHide: false,
 //     isFull: false,
@@ -438,7 +455,7 @@ const componentRouter = {
 //       component: "/form/proForm/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "超级 Form",
+//         name: "超级 Form",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -452,7 +469,7 @@ const componentRouter = {
 //       component: "/form/basicForm/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "基础 Form",
+//         name: "基础 Form",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -466,7 +483,7 @@ const componentRouter = {
 //       component: "/form/validateForm/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "校验 Form",
+//         name: "校验 Form",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -480,7 +497,7 @@ const componentRouter = {
 //       component: "/form/dynamicForm/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "动态 Form",
+//         name: "动态 Form",
 //         isLink: "",
 //         isHide: false,
 //         isFull: false,
@@ -500,7 +517,8 @@ const echartsRouter = {
   redirect: "/echarts/waterChart",
   meta: {
     icon: "echarts",
-    title: "Echarts",
+    name: "Echarts",
+    title: "echarts.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -514,7 +532,8 @@ const echartsRouter = {
       component: "/echarts/waterChart/index",
       meta: {
         icon: "water-chart",
-        title: "水型图",
+        name: "水型图",
+        title: "echarts.water",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -528,7 +547,8 @@ const echartsRouter = {
       component: "/echarts/columnChart/index",
       meta: {
         icon: "columnar",
-        title: "柱状图",
+        name: "柱状图",
+        title: "echarts.columnar",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -542,7 +562,8 @@ const echartsRouter = {
       component: "/echarts/lineChart/index",
       meta: {
         icon: "polyline",
-        title: "折线图",
+        name: "折线图",
+        title: "echarts.polyline",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -556,7 +577,8 @@ const echartsRouter = {
       component: "/echarts/pieChart/index",
       meta: {
         icon: "pie",
-        title: "饼图",
+        name: "饼图",
+        title: "echarts.pie",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -570,7 +592,8 @@ const echartsRouter = {
       component: "/echarts/radarChart/index",
       meta: {
         icon: "radar",
-        title: "雷达图",
+        name: "雷达图",
+        title: "echarts.radar",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -584,7 +607,8 @@ const echartsRouter = {
       component: "/echarts/nestedChart/index",
       meta: {
         icon: "inline-circular",
-        title: "嵌套环形图",
+        name: "嵌套环形图",
+        title: "echarts.nested",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -604,7 +628,8 @@ const directivesRouter = {
   redirect: "/directives/copyDirect",
   meta: {
     icon: "custom-command",
-    title: "自定义指令",
+    name: "自定义指令",
+    title: "directives.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -618,7 +643,8 @@ const directivesRouter = {
       component: "/directives/copyDirect/index",
       meta: {
         icon: "copy",
-        title: "复制指令",
+        name: "复制指令",
+        title: "directives.copy",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -632,7 +658,8 @@ const directivesRouter = {
       component: "/directives/watermarkDirect/index",
       meta: {
         icon: "watermark",
-        title: "水印指令",
+        name: "水印指令",
+        title: "directives.watermark",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -646,7 +673,8 @@ const directivesRouter = {
       component: "/directives/dragDirect/index",
       meta: {
         icon: "drag-component",
-        title: "拖拽指令",
+        title: "directives.drag",
+        name: "拖拽指令",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -660,7 +688,8 @@ const directivesRouter = {
       component: "/directives/debounceDirect/index",
       meta: {
         icon: "debounce",
-        title: "防抖指令",
+        name: "防抖指令",
+        title: "directives.debounce",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -674,7 +703,8 @@ const directivesRouter = {
       component: "/directives/throttleDirect/index",
       meta: {
         icon: "throttle",
-        title: "节流指令",
+        name: "节流指令",
+        title: "directives.throttle",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -688,7 +718,8 @@ const directivesRouter = {
       component: "/directives/longpressDirect/index",
       meta: {
         icon: "long-press",
-        title: "长按指令",
+        name: "长按指令",
+        title: "directives.longPress",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -708,7 +739,8 @@ const menuRouter = {
   redirect: "/menu/menu1",
   meta: {
     icon: "menu-manage",
-    title: "菜单嵌套",
+    name: "菜单嵌套",
+    title: "menu.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -722,7 +754,8 @@ const menuRouter = {
       component: "/menu/menu1/index",
       meta: {
         icon: "menu-root",
-        title: "菜单1",
+        name: "菜单1",
+        title: "menu.menu1",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -736,7 +769,8 @@ const menuRouter = {
       redirect: "/menu/menu2/menu21",
       meta: {
         icon: "menu-root",
-        title: "菜单2",
+        name: "菜单2",
+        title: "menu.menu2",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -750,7 +784,8 @@ const menuRouter = {
           component: "/menu/menu2/menu21/index",
           meta: {
             icon: "menu-root",
-            title: "菜单2-1",
+            name: "菜单2-1",
+            title: "menu.menu21",
             isLink: "",
             isHide: false,
             isFull: false,
@@ -764,7 +799,8 @@ const menuRouter = {
           redirect: "/menu/menu2/menu22/menu221",
           meta: {
             icon: "menu-root",
-            title: "菜单2-2",
+            name: "菜单2-2",
+            title: "menu.menu22",
             isLink: "",
             isHide: false,
             isFull: false,
@@ -778,7 +814,8 @@ const menuRouter = {
               component: "/menu/menu2/menu22/menu221/index",
               meta: {
                 icon: "menu-root",
-                title: "菜单2-2-1",
+                name: "菜单2-2-1",
+                title: "menu.menu221",
                 isLink: "",
                 isHide: false,
                 isFull: false,
@@ -792,7 +829,8 @@ const menuRouter = {
               component: "/menu/menu2/menu22/menu222/index",
               meta: {
                 icon: "menu-root",
-                title: "菜单2-2-2",
+                name: "菜单2-2-2",
+                title: "menu.menu222",
                 isLink: "",
                 isHide: false,
                 isFull: false,
@@ -808,7 +846,8 @@ const menuRouter = {
           component: "/menu/menu2/menu23/index",
           meta: {
             icon: "menu-root",
-            title: "菜单2-3",
+            name: "菜单2-3",
+            title: "menu.menu23",
             isLink: "",
             isHide: false,
             isFull: false,
@@ -824,7 +863,8 @@ const menuRouter = {
       component: "/menu/menu3/index",
       meta: {
         icon: "menu-root",
-        title: "菜单3",
+        name: "菜单3",
+        title: "menu.menu3",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -844,7 +884,8 @@ const systemRouter = {
   redirect: "/system/accountManage",
   meta: {
     icon: "system-manage",
-    title: "系统管理",
+    name: "系统管理",
+    title: "system.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -858,7 +899,8 @@ const systemRouter = {
       component: "/system/accountManage/index",
       meta: {
         icon: "account-manage",
-        title: "账号管理",
+        name: "账号管理",
+        title: "system.account",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -872,7 +914,8 @@ const systemRouter = {
       component: "/system/roleManage/index",
       meta: {
         icon: "user-manage",
-        title: "角色管理",
+        name: "角色管理",
+        title: "system.user",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -886,7 +929,8 @@ const systemRouter = {
       component: "/system/menuMange/index",
       meta: {
         icon: "menu-manage",
-        title: "菜单管理",
+        name: "菜单管理",
+        title: "system.menu",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -900,7 +944,8 @@ const systemRouter = {
       component: "/system/departmentManage/index",
       meta: {
         icon: "department-manage",
-        title: "部门管理",
+        name: "部门管理",
+        title: "system.department",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -914,7 +959,8 @@ const systemRouter = {
       component: "/system/dictManage/index",
       meta: {
         icon: "dictionary-manage",
-        title: "字典管理",
+        name: "字典管理",
+        title: "system.dictionary",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -928,7 +974,8 @@ const systemRouter = {
       component: "/system/timingTask/index",
       meta: {
         icon: "timed-task",
-        title: "定时任务",
+        name: "定时任务",
+        title: "system.timingTask",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -942,7 +989,8 @@ const systemRouter = {
       component: "/system/systemLog/index",
       meta: {
         icon: "system-log",
-        title: "系统日志",
+        name: "系统日志",
+        title: "system.systemLog",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -962,7 +1010,7 @@ const systemRouter = {
 //   redirect: "/link/gitee",
 //   meta: {
 //     icon: "Paperclip",
-//     title: "外部链接",
+//     name: "外部链接",
 //     isLink: "",
 //     isHide: false,
 //     isFull: false,
@@ -976,7 +1024,7 @@ const systemRouter = {
 //       component: "/link/gitee/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "Gitee 仓库",
+//         name: "Gitee 仓库",
 //         isLink: "https://gitee.com/laramie/Geeker-Admin",
 //         isHide: false,
 //         isFull: false,
@@ -990,7 +1038,7 @@ const systemRouter = {
 //       component: "/link/github/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "GitHub 仓库",
+//         name: "GitHub 仓库",
 //         isLink: "https://github.com/HalseySpicy/Geeker-Admin",
 //         isHide: false,
 //         isFull: false,
@@ -1004,7 +1052,7 @@ const systemRouter = {
 //       component: "/link/geekerDocs/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "项目文档",
+//         name: "项目文档",
 //         isLink: "https://docs.spicyboy.cn",
 //         isHide: false,
 //         isFull: false,
@@ -1018,7 +1066,7 @@ const systemRouter = {
 //       component: "/link/juejin/index",
 //       meta: {
 //         icon: "Menu",
-//         title: "掘金主页",
+//         name: "掘金主页",
 //         isLink: "https://juejin.cn/user/3263814531551816/posts",
 //         isHide: false,
 //         isFull: false,
@@ -1035,7 +1083,8 @@ const abnormalRouter = {
   redirect: "/abnormal/403",
   meta: {
     icon: "abnormal",
-    title: "异常页面",
+    name: "异常页面",
+    title: "abnormal.root",
     isLink: "",
     isHide: false,
     isFull: false,
@@ -1049,7 +1098,8 @@ const abnormalRouter = {
       component: "/abnormal/403",
       meta: {
         icon: "fourZeroThree",
-        title: "403",
+        name: "403",
+        title: "abnormal.403",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -1063,7 +1113,8 @@ const abnormalRouter = {
       component: "/abnormal/404",
       meta: {
         icon: "fourZeroFour",
-        title: "404",
+        name: "404",
+        title: "abnormal.404",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -1077,7 +1128,8 @@ const abnormalRouter = {
       component: "/abnormal/500",
       meta: {
         icon: "fiveZeroZero",
-        title: "500",
+        name: "500",
+        title: "abnormal.500",
         isLink: "",
         isHide: false,
         isFull: false,
@@ -1096,7 +1148,7 @@ export default [
       if (headers["x-access-token"] === "bqddxxwqmfncffacvbpkuxvwvqrhln") {
         return {
           success: true,
-          code: 200,
+          title: 200,
           msg: "请求成功",
           data: [
             homeRouter,
@@ -1117,7 +1169,7 @@ export default [
       } else if (headers["x-access-token"] === "unufvdotdqxuzfbdygovfmsbftlvbn") {
         return {
           success: true,
-          code: 200,
+          title: 200,
           msg: "请求成功",
           data: [
             homeRouter,

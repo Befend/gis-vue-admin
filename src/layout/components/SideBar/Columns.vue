@@ -65,7 +65,7 @@ const changeSubMenu = (item: Menu.MenuOptions) => {
               <!-- <component :is="item.meta.icon"></component> -->
               <SvgIcon :name="item.meta.icon" />
             </el-icon>
-            <span class="title">{{ item.meta.title }}</span>
+            <span class="title">{{ $t(item.meta.title) }}</span>
           </div>
         </div>
       </el-scrollbar>

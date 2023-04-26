@@ -15,7 +15,7 @@ const breadcrumbList = computed(() => {
   let breadcrumbData = authStore.breadcrumbListGet[route.matched[route.matched.length - 1].path] ?? []
   // 🙅‍♀️不需要首页面包屑可删除以下判断
   if (breadcrumbData[0].meta.title !== route.meta.title) {
-    breadcrumbData = [{ path: HOME_URL, meta: { icon: "homepage", title: "首页" } }, ...breadcrumbData]
+    breadcrumbData = [{ path: HOME_URL, meta: { icon: "homepage", title: "home.root" } }, ...breadcrumbData]
   }
   return breadcrumbData
 })
@@ -39,7 +39,7 @@ const onBreadcrumbClick = (item: Menu.MenuOptions, index: number) => {
               class="breadcrumb-icon"
               :name="item.meta.icon"
             ></SvgIcon>
-            <span class="breadcrumb-title">{{ item.meta.title }}</span>
+            <span class="breadcrumb-title">{{ $t(item.meta.title) }}</span>
           </div>
         </el-breadcrumb-item>
       </transition-group>

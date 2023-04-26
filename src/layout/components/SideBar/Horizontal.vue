@@ -43,7 +43,7 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
                 <!-- <component :is="subItem.meta.icon"></component> -->
                 <SvgIcon :name="subItem.meta.icon" />
               </el-icon>
-              <span>{{ subItem.meta.title }}</span>
+              <span>{{ $t(subItem.meta.title) }}</span>
             </template>
             <SubMenu :menuList="subItem.children" />
           </el-sub-menu>
@@ -53,7 +53,7 @@ const handleClickMenu = (subItem: Menu.MenuOptions) => {
               <SvgIcon :name="subItem.meta.icon" />
             </el-icon>
             <template #title>
-              <span>{{ subItem.meta.title }}</span>
+              <span>{{ $t(subItem.meta.title) }}</span>
             </template>
           </el-menu-item>
         </template>

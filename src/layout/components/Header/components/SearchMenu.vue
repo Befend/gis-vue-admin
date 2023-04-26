@@ -71,7 +71,7 @@ const handleClickMenu = (menuItem: Menu.MenuOptions) => {
           <el-icon>
             <component :is="item.meta.icon"></component>
           </el-icon>
-          <span> {{ item.meta.title }} </span>
+          <span> {{ $t(item.meta.title) }} </span>
         </template>
       </el-autocomplete>
     </el-dialog>

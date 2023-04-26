@@ -5,6 +5,7 @@ import { LOGIN_URL, ROUTER_WHITE_LIST } from "@/config/config"
 import { initDynamicRouter } from "@/router/modules/dynamicRouter"
 import { staticRouter, errorRouter } from "@/router/modules/staticRouter"
 import NProgress from "@/config/nprogress"
+import i18n from "@/languages"
 
 /**
  * @description 动态路由参数配置简介
@@ -32,7 +33,7 @@ const router = createRouter({
 /**
  * @description 路由拦截 beforeEach
  * */
-router.beforeEach(async (to, from, next) => {
+router.beforeEach(async (to: any, from, next) => {
   const globalStore = GlobalStore()
 
   // 1.NProgress 开始
@@ -40,7 +41,7 @@ router.beforeEach(async (to, from, next) => {
 
   // 2.动态设置标题
   const title = import.meta.env.VITE_GLOB_APP_TITLE
-  document.title = to.meta.title ? `${to.meta.title} - ${title}` : title
+  document.title = to.meta.title ? `${i18n.global.t(to.meta.title)} - ${title}` : title
 
   // 3.判断是访问登陆页，有 Token 就在当前页面，没有 Token 重置路由并放行到登陆页
   if (to.path.toLocaleLowerCase() === LOGIN_URL) {

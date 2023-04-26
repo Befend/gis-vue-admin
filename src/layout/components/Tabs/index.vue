@@ -100,7 +100,7 @@ const tabRemove = (fullPath: string) => {
               <component :is="item.icon"></component>
             </el-icon> -->
             <SvgIcon v-show="item.icon && themeConfig.tabsIcon" class="tabs-icon" :name="item.icon"></SvgIcon>
-            {{ item.title }}
+            {{ $t(item.title) }}
           </template>
         </el-tab-pane>
       </el-tabs>
