@@ -33,7 +33,7 @@
     width: 30%;
     height: 100%;
     .img {
-      width: 100%;
+      width: 50%;
     }
   }
   .home-center {
